@@ -4,7 +4,7 @@ export function Menu() {
     return (
         <div className="Menu">
 
-			<p>Menu Component</p>
+			<p>Menu</p>
 
         </div>
     );

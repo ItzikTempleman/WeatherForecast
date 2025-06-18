@@ -4,7 +4,7 @@ export function Copyrights() {
     return (
         <div className="Copyrights">
 
-			<p>Copyrights Component</p>
+			<p>Copyrights</p>
 
         </div>
     );

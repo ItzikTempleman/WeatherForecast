@@ -4,7 +4,7 @@ export function Routing() {
     return (
         <div className="Routing">
 
-			<p>Routing Component</p>
+			<p>Routing</p>
 
         </div>
     );

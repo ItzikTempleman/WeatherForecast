@@ -1,3 +1,26 @@
 .MainLayout {
-	
+	height: 100vh;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-rows: 10% 80% 10%;
+    grid-template-columns: 15% 85%;
+}
+
+header, footer{
+grid-column: span 2;
+}
+header, aside, main, footer{
+    border: solid 0.5px;
+    margin: 2px;
+    padding: 4px;
+    border-radius: 5px;
+}
+
+main{
+overflow: auto;
+    min-height: 0;
+}
+
+.MainLayout >*{
+    font-family: Arial;
 }
