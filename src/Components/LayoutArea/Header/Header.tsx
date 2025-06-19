@@ -4,7 +4,7 @@ export function Header() {
     return (
         <div className="Header">
 
-			<p>Header</p>
+            <h2>Weather finder</h2>
 
         </div>
     );

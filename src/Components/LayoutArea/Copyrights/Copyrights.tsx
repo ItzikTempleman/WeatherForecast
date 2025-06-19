@@ -4,7 +4,7 @@ export function Copyrights() {
     return (
         <div className="Copyrights">
 
-			<p>Copyrights</p>
+            <p> &copy; 2025 Itzik Templeman <sup>&reg;</sup> Weather finder</p>
 
         </div>
     );

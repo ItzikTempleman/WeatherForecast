@@ -1,3 +1,31 @@
 .Menu {
-	
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px 10px 10px;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
+
+.nav-link {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    padding: 8px 12px;
+    border-left: 4px solid transparent;
+}
+
+.nav-link.active {
+    color: #0B63CE;
+    font-weight: bold;
+    border-left: 4px solid #0B63CE;
+    background-color: #f5f7fa;
+}
+
+.nav-link:hover{
+    color: #82ade3;
+}
+
