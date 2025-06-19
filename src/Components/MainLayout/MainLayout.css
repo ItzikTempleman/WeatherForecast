@@ -10,10 +10,10 @@ header, footer{
 grid-column: span 2;
 }
 header, aside, main, footer{
-    border: solid 0.5px;
-    margin: 2px;
+    border: solid 0.2px grey;
+    margin: 0.75px;
     padding: 4px;
-    border-radius: 5px;
+    border-radius: 0;
 }
 
 main{

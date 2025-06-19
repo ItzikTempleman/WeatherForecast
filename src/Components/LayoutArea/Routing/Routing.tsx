@@ -1,7 +1,7 @@
 import "./Routing.css";
 import {Navigate, Route, Routes} from "react-router-dom";
 import {Page404} from "../../PageArea/Page404/Page404.tsx";
-import {Home} from "../../PageArea/Home/Home.tsx";
+import {Home} from "../../PageArea/HomeScreenArea/Home.tsx";
 import {Forecast} from "../../PageArea/Forecast/Forecast.tsx";
 
 export function Routing() {
