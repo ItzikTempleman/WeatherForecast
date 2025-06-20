@@ -21,27 +21,27 @@ export function LocationSelector() {
                     fullWidth
                     value={selectedCity}
                     onChange={handleChange}
-                    MenuProps={{
-                        PaperProps: {
-                            className: "city-menu-paper"
+                    MenuProps={
+                        {
+                            PaperProps: {
+                                className: "city-menu-paper"
+                            }
                         }
-                    }}
+                    }
                 >
-                    <MenuItem value="" disabled>
-                        Select Israeli city
-                    </MenuItem>
-                {
-                    cities.map(
-                        (city) => {
-                            return (
+                    <MenuItem value="" disabled>Select Israeli city</MenuItem>
+                    {
+                        cities.map(
+                            (city: string) => {
+                                return (
 
-                              <MenuItem key={city} value={city}>
-                                  {city}
-                              </MenuItem>
-                            );
-                        }
-                    )
-                }
+                                    <MenuItem key={city} value={city}>
+                                        {city}
+                                    </MenuItem>
+                                );
+                            }
+                        )
+                    }
                 </Select>
             </FormControl>
         </div>
