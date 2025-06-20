@@ -1,3 +1,13 @@
+.Home{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 10px;
+    align-items: start;
+}
+
+
 .Home>img{
     width: 50%;
     height: 50%;

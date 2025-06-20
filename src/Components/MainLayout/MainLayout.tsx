@@ -11,7 +11,6 @@ export function MainLayout() {
             <header>
                 <Header/>
             </header>
-
             <aside>
                 <Menu/>
             </aside>

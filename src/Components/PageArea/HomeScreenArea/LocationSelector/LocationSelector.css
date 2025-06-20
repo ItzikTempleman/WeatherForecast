@@ -1,3 +1,23 @@
-.LocationSelector {
-	
+.city-form-control {
+    width: 200px !important;
+}
+
+.city-select {
+    width: 100% !important;
+    font-family: Arial !important;
+}
+
+
+.MuiMenuItem-root {
+    font-family: Arial !important;
+}
+
+.MuiSelect-root {
+    font-family: Arial !important;
+
+}
+
+.city-menu-paper{
+    max-height: 400px !important;
+    overflow-y: auto !important;
 }
