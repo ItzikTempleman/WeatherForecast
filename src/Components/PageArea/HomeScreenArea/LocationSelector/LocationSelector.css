@@ -1,3 +1,12 @@
+.LocationSelector {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    height: 100px;
+}
+
+
 .city-form-control {
     width: 200px !important;
 }
@@ -17,7 +26,11 @@
 
 }
 
-.city-menu-paper{
+.city-menu-paper {
     max-height: 400px !important;
     overflow-y: auto !important;
+}
+
+.search-btn {
+    font-family: Arial !important;
 }

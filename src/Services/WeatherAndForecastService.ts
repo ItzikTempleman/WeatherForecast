@@ -10,6 +10,7 @@ class WeatherAndForecastService {
             `${appConfig.weatherUrl}${appConfig.apikey}&q=${selectedCity}`
         )
         const weather= response.data;
+        console.log(weather)
         store.dispatch(weatherSlice.actions.initWeather(weather));
     }
 }
