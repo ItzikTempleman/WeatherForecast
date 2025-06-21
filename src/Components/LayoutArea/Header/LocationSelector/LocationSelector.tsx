@@ -3,7 +3,7 @@ import {cities} from "../../../../Utils/CityList.ts";
 import {Button, FormControl, MenuItem, Select, type SelectChangeEvent} from "@mui/material";
 import {useState} from "react";
 import {weatherAndForecastService} from "../../../../Services/WeatherAndForecastService.ts";
-
+import SearchIcon from '@mui/icons-material/Search';
 
 export function LocationSelector() {
 
@@ -57,9 +57,10 @@ export function LocationSelector() {
                 <Button
                     className="search-btn"
                     type="button"
-                    color="primary"
+                    style={{ backgroundColor: "#ffffff", color: "#1e5b8c" }}
                     variant="contained"
                     onClick={searchWeather}
+                    startIcon={<SearchIcon />}
                 >
                     Search
                 </Button>

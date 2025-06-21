@@ -6,7 +6,9 @@
     padding: 10px;
     align-items: start;
 }
-
+::-webkit-scrollbar {
+    display: none;
+}
 
 .Home>img{
     width: 50%;

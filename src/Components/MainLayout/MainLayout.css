@@ -1,21 +1,25 @@
 .MainLayout {
+    background: linear-gradient(45deg,#d2c4bb, #d2c4bb, #b5c3f3,#b5c3f3, #b5c3f3,#b5c3f3,#b5c3f3);
 	height: 100vh;
     box-sizing: border-box;
     display: grid;
-    grid-template-rows: 10% 80% 10%;
-    grid-template-columns: 15% 85%;
+    grid-template-rows: 13% 82% 5%;
+    grid-template-columns: 10% 90%;
 }
 
 header, footer{
 grid-column: span 2;
 }
 header, aside, main, footer{
-    border: solid 0.2px grey;
-    margin: 0.75px;
+    border-radius: 8px;
+    margin: 10px;
     padding: 4px;
-    border-radius: 0;
+    background: rgba(227, 231, 253, 0.65);
 }
 
+footer{
+    background: transparent !important;
+}
 main{
 overflow: auto;
     min-height: 0;

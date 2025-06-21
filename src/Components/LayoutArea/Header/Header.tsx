@@ -1,11 +1,12 @@
 import "./Header.css";
+import {LocationSelector} from "./LocationSelector/LocationSelector.tsx";
 
 export function Header() {
     return (
-        <div className="Header">
 
-            <h2>Weather finder</h2>
-
-        </div>
+<span className="Header">
+           <h3>Weather finder</h3>
+            <LocationSelector/>
+</span>
     );
 }

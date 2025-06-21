@@ -1,9 +1,16 @@
 .Header {
     height: 100%;
     display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: start;
+    gap: 15px;
+    justify-content: flex-start;
 }
-.Header >*{
+
+.Header > * {
     font-family: Arial;
+}
+.Header> h3{
+    padding-left: 50px;
+    color: dodgerblue;
 }

@@ -19,10 +19,9 @@
 }
 
 .nav-link.active {
-    color: #0B63CE;
+    color: dodgerblue;
     font-weight: bold;
-    border-left: 4px solid #0B63CE;
-    background-color: #f5f7fa;
+    border-left: 4px solid dodgerblue;
 }
 
 .nav-link:hover{
