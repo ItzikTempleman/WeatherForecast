@@ -2,8 +2,22 @@ import "./MainWeatherCard.css";
 
 import {useSelector} from "react-redux";
 import {type AppState} from "../../../../Redux/Store.ts";
+import {useEffect, useState} from "react";
 
 export function MainWeatherCard() {
+
+    const [time, setTime] = useState("")
+
+    useEffect(() => {
+        const intervalId = setInterval(() => {
+                const date = new Date()
+                const hours = String(date.getHours()).padStart(2, '0');
+                const minutes = String(date.getMinutes()).padStart(2, '0');
+                setTime(`${hours}:${minutes}`)
+            }, 1000
+        );
+        return () => clearInterval(intervalId);
+    }, []);
 
     const weather = useSelector((state: AppState) => (
             state.weatherInstances[0]
@@ -15,9 +29,15 @@ export function MainWeatherCard() {
         ? `https:${current.condition.icon}`
         : "";
 
+
     return (
         <div className="MainWeatherCard">
+
             <div className="top-info-wrapper">
+                <div className="top-left-wrapper">
+                    <p className="current-weather-text">Current weather</p>
+                    <p className="time">{time}</p>
+                </div>
                 <div className="city-name">
                     <p>{location?.name}, {location?.country}</p>
                 </div>
@@ -34,13 +54,24 @@ export function MainWeatherCard() {
                         <p>Feels like: {(current?.feelslike_c)?.toFixed(0)}°</p>
                     </div>
                 </div>
-
             </div>
 
-            <p>Humidity: {current?.humidity}%</p>
-            <p>Wind: {current?.wind_kph} km/h</p>
-            <p>UV index: {current?.uv}</p>
+            <div className="extra-data">
+                <div className="humidity">
+                    <p>Humidity</p>
+                    <p>{(current?.humidity)?.toFixed(0)}%</p>
+                </div>
 
+                <div className="wind-speed">
+                    <p>Wind</p>
+                    <p>{(current?.wind_kph)?.toFixed(0)} km/h</p>
+                </div>
+
+                <div className="uv">
+                    <p>UV index</p>
+                    <p>{(current?.uv)?.toFixed(0)}</p>
+                </div>
+            </div>
         </div>
     );
 }
