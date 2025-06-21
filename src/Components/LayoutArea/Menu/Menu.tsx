@@ -5,7 +5,7 @@ export function Menu() {
     return (
         <div className="Menu">
             <NavLink to="/home"  className="nav-link">Home</NavLink>
-            <NavLink to="/forecast"  className="nav-link">Forecast</NavLink>
+            <NavLink to="/about"  className="nav-link">About</NavLink>
         </div>
     );
 }
