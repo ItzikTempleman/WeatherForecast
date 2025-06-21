@@ -3,15 +3,15 @@
 	height: 100vh;
     box-sizing: border-box;
     display: grid;
-    grid-template-rows: 13% 82% 5%;
-    grid-template-columns: 10% 90%;
+    grid-template-rows: minmax(70px, 90px) 1fr minmax(40px, 50px);
+    grid-template-columns: minmax(150px, 150px) 1fr;
 }
 
 header, footer{
 grid-column: span 2;
 }
 header, aside, main, footer{
-    border-radius: 8px;
+    border-radius: 20px;
     margin: 10px;
     padding: 4px;
     background: rgba(227, 231, 253, 0.65);
