@@ -17,6 +17,7 @@ export function LocationSelector() {
 
     async function searchWeather() {
         await weatherAndForecastService.getWeather(selectedCity);
+        await weatherAndForecastService.getForecast(selectedCity);
     }
 
 

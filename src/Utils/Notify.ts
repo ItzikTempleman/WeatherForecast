@@ -12,9 +12,11 @@ class Notify {
         }
     );
 
+
     public success(message: string): void {
         this.notyf.success(message)
     }
+
 
     public error(err: unknown): void {
         const message = this.extractMessage(err)

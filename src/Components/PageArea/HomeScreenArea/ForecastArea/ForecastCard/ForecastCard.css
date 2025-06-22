@@ -1,3 +1,22 @@
 .ForecastCard {
-	
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    border-radius: 20px;
+
+    gap: 20px;
+}
+.hour-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.hour-entry {
+    padding: 10px;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
