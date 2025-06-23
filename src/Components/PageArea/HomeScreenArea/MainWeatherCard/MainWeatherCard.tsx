@@ -51,24 +51,24 @@ export function MainWeatherCard() {
                     </div>
                     <div className="stats">
                         <p>{current?.condition?.text}</p>
-                        <p>Feels like: {(current?.feelslike_c)?.toFixed(0)}°</p>
+                        <p>feels like {(current?.feelslike_c)?.toFixed(0)}°</p>
                     </div>
                 </div>
             </div>
 
             <div className="extra-data">
                 <div className="humidity">
-                    <p>Humidity</p>
+                    <p>humidity</p>
                     <p>{(current?.humidity)?.toFixed(0)}%</p>
                 </div>
 
                 <div className="wind-speed">
-                    <p>Wind</p>
+                    <p>wind</p>
                     <p>{(current?.wind_kph)?.toFixed(0)} km/h</p>
                 </div>
 
                 <div className="uv">
-                    <p>UV index</p>
+                    <p>uv index (1..12)</p>
                     <p>{(current?.uv)?.toFixed(0)}</p>
                 </div>
             </div>
