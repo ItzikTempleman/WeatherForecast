@@ -7,4 +7,5 @@ export class Hour {
     public humidity?: number;
     public feelslike_c?: number;
     public uv?: number;
+    public wind_kph?:number
 }
