@@ -1,38 +1,79 @@
 .ForecastCard {
     display: flex;
     flex-direction: column;
-    border-radius: 12px;
-    background-color: rgba(255, 255, 255, 0.4);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     margin: 10px;
-    padding:10px;
+    padding: 10px;
 }
 
 .forecast-date {
-
+    font-size: 22px;
 }
 
 .forecast-item {
     display: flex;
     flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 12px;
+    margin-bottom: 8px;
 }
-
 .forecast-icon {
-
+    margin-top: 10px;
 }
 
 .forecast-time-and-condition {
-
+    font-size: 16px;
 }
 
+/* Temperature */
 .forecast-temp {
-
+    font-size: 30px;
 }
 
-.extra-forecast-data {
 
+.forecast-pair {
+    display: flex;
+    align-items: center;
+    color: #4a4a4a;
+    font-size: 12px;
 }
 
-.forecast-stats {
 
+.forecast-pair p span {
+    white-space: nowrap;
+}
+
+/* Value text */
+.forecast-pair p:last-child {
+    color: black;
+    font-size: 16px;
+}
+
+.wind-forecast,
+.humidity-forecast,
+.feelsLike-forecast,
+.uv-forecast,
+.forecast-time-and-condition,
+.forecast-temp {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+/* Vertical divider full height */
+.bl {
+    width: 2px;
+    background: rgba(197, 196, 196, 0.84);
+    height: 50px;
+    margin: 25px;
+}
+
+
+/* Horizontal divider after each item */
+.h-bl {
+    width: 100%;
+    background: rgba(197, 196, 196, 0.84);
+    height: 1px;
+    margin: 12px 0;
 }

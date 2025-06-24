@@ -1,12 +1,19 @@
-.Home{
-    height: 100vh;
+.Home {
     display: flex;
     width: 100%;
-    flex-direction: row;
-    box-sizing: border-box;
+    height: 100%;
     padding: 10px;
-    align-items: start;
+    box-sizing: border-box;
+    align-items: flex-start;
+    gap: 20px; /* spacing between main weather and forecast */
 }
+
+.Home > .MainWeatherCard {
+    flex-grow: 1;
+    min-width: 0; /* prevents overflow */
+}
+
+
 ::-webkit-scrollbar {
     display: none;
 }
