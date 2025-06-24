@@ -1,3 +1,66 @@
 .About {
-	
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 2);
+    background-color: white;
+    margin: 20px auto;
+    display: flex;
+    width: 780px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px;
+    padding:20px;
+}
+
+
+.aboutImage {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #ccc;
+    margin-bottom: 25px;
+}
+.aboutScreenContainer {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.aboutTitle {
+    font-size: 28px;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.aboutDescription {
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 700px;
+}
+
+.aboutDivider {
+    width: 80%;
+    border: none;
+    border-top: 1px solid #bbb;
+    margin: 30px 0;
+}
+
+.developerHeading {
+    font-size: 22px;
+    color: #1c1c1c;
+    margin-bottom: 10px;
+}
+
+.developerInfo {
+    text-align: left;
+    max-width: 600px;
+}
+
+.developerNote {
+    margin-top: 30px;
+    font-style: italic;
+    color: black;
 }
